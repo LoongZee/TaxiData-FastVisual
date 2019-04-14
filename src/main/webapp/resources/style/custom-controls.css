@@ -1,0 +1,74 @@
+.panel-button {
+    position: absolute !important;
+    top: 0;
+    right: calc(50% - 25px);
+    height: 30px !important;
+    width: 50px !important;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    background-color: rgba(0,0,0,0.5);
+    border: 0 !important;
+    color: white !important;
+}
+
+.panel-button:hover  {
+    background-color: rgba(0,0,0,0.9) !important;
+}
+
+.panel-button:focus {
+    background-color: rgba(0,0,0,0.5);
+    outline: none !important;
+}
+
+
+.tool-btn {
+    position: absolute;
+    width: 70px !important;
+    height: 40px !important;
+    border: 0 !important;
+    border-radius: 8px;;
+    top: 4px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+#layer-control-tool {
+    left: 20px !important;
+}
+
+#edit-tool {
+    left: 115px;
+}
+
+#analysis-tool {
+    right: 20px;
+}
+
+.tool-btn:hover {
+    background-color: white !important;
+}
+
+.tool-btn:focus {
+    outline: none !important;
+    background-color: white;
+}
+
+.main-panel {
+    position: absolute;
+    top: -50px;
+    right: calc(50% - 150px);
+    width: 300px !important;
+    height: 50px !important;
+    border: 0 !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+.main-panel:hover {
+    background-color: rgba(0,0,0,0.7) !important;
+}
+
+
+

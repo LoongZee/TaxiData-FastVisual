@@ -1,0 +1,126 @@
+.layer-switcher.shown.ol-control {
+    background-color: transparent;
+}
+
+.layer-switcher.shown.ol-control:hover {
+    background-color: transparent;
+}
+
+.layer-switcher {
+    position: absolute;
+    top: 11.5em;
+    right: 0.5em;
+    text-align: left;
+    font-weight: normal !important;
+}
+
+.layer-switcher.shown {
+    bottom: 3em;
+}
+
+.layer-switcher .panel {
+	color: #fff;
+    padding: 0 1em 0 0;
+    margin: 0;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.layer-switcher.shown .panel {
+    display: block;
+}
+
+.layer-switcher ul {
+    padding-left: 1em;
+    list-style: none;
+}
+
+.layer-switcher li.group {
+    padding-top: 5px;
+    border-bottom: 1px dashed #bdbdbd;
+}
+
+.layer-switcher li.group > label {
+    font-weight: normal;
+}
+
+.layer-switcher li.dashed > label {
+    font-weight: normal;
+}
+
+.layer-switcher li.layer {
+    display: table;
+}
+
+.layer-switcher li.layer label, .layer-switcher li.layer input {
+    display: table-cell;
+    vertical-align: sub;
+    font-weight: normal;
+}
+
+
+.layer-switcher input {
+    margin-right: 4px;
+}
+
+.layer-switcher select {
+    margin-right: 4px;
+    height: 26px;
+}
+
+.layer-switcher.touch ::-webkit-scrollbar {
+    width: 4px;
+}
+
+.layer-switcher.touch ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.layer-switcher.touch ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.layer-switcher.shown {
+    max-height: 260px;
+}
+
+
+.layerinput{
+	padding: 0px 0px; 
+	height: 26px;
+	border-width: 1px;
+	outline-color: #e8e8e8 !important;
+    float:left;
+	width:70%;
+	border-radius: 4px !important;
+	color: rgba(0,0,0,0.8);
+}
+
+.lyrbtn{
+	font-weight: normal !important;
+	margin: 0px !important;
+	float: left;
+	height: 26px !important;
+	width: 20% !important;
+	border-radius: 4px !important;
+	color: #333 !important;
+	background: rgba(255,255,255,0.7) !important;
+}
+
+.lyrbtn:hover
+{
+	background: #fff !important;
+}
+
+.dashed{
+	padding-top: 5px;
+	height: 65px;
+    border-bottom: 1px dashed #bdbdbd;
+}
+
+

@@ -1,0 +1,50 @@
+{
+"tools":[{ 
+			"id": "layerswitcher-tool",
+			"name": "layer-control-tool",
+			"js": "ol-layerswitcher.js&layerswitcher-tool.js",
+			"css": "ol-layerswitcher.css",
+			"secondMenuFlag":"false"  
+		},{ 
+			"id": "editor", 
+			"name": "edit-tool", 
+			"js": "customSelectInteraction.js&edit-tool.js", 
+			"css": "", 
+			"secondMenuFlag":"false" 
+		},{ 
+			"id": "analysis",
+			"name": "analysis-tool",  
+			"js": "bootstrap-switch.min.js&d3.v3.min.js&analysis-tool.js", 
+			"css": "bootstrap-switch.min.css", 
+			"secondMenuFlag":"true",  
+			"secondMenu": [{ 
+			                 "id": "query", 
+							 "name": "menu1", 
+							 "js": "boxquery.js",  
+							 "css": "" 
+			               },{ 
+			                 "id": "heatmap",
+							 "name": "menu2",
+							 "js": "heatmap.js",
+							 "css": ""
+			               }
+			               ,{ 
+			                 "id": "time",
+							 "name": "menu3",
+							 "js": "Timeseries.js&time.js",
+							 "css": ""
+			               }
+			               ,{
+			                 "id": "updown", 
+							 "name": "menu4",
+							 "js": "Timeseries.js&GroupedBarChart.js&updown.js",
+							 "css": ""
+			               }
+			               ,{ 
+			                 "id": "congest",
+							 "name": "menu5",
+							 "js": "Citycongest.js&congest.js",
+							 "css": ""
+			               }]
+		}]
+}

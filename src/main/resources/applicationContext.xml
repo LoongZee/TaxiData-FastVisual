@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+    <bean id="SpringUtil" class="com.lzh.db.SpringUtil"  lazy-init="false"/>
+    <!-- 定义数据源Bean，使用C3P0数据源实现 -->  
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">     
+        <!-- 指定连接数据库的驱动 -->  
+        <property name="driverClass" value="org.postgresql.Driver" />  
+        <!-- 指定连接数据库的URL -->  
+        <property name="jdbcUrl" value="jdbc:postgresql://localhost:5432/bjtaxi" />  
+        <!-- 指定连接数据库的用户名 -->  
+        <property name="user" value="postgres" />  
+        <!-- 指定连接数据库的密码 -->  
+        <property name="password" value="123456" />  
+        
+    </bean>  
+    
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">  
+        <property name="dataSource" ref="dataSource">  
+        </property>
+    </bean>
+
+
+
+</beans>
