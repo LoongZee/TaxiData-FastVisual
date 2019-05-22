@@ -1,5 +1,5 @@
 # TaxiData-FastVisual
-TaxiData-FastVisual is a fast visualization project for taxi data. Data storage methods uses the quadtree partitioning.
+TaxiData-FastVisual is a fast visualization project for taxi data. Data storage methods use the quadtree partitioning.
 
 ## Implementation
 <span>|framework
